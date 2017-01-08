@@ -1,0 +1,551 @@
+/* Import Section
+=================================================================== */
+button:focus {outline:0 !important;}
+
+::-moz-selection {
+	background: #c8da3b;
+    color: #fff;
+}
+
+::selection {
+	background: #c8da3b;
+    color: #fff;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+    font-family: Calibri, Arial, sans-serif;
+    background: #fff;
+    color: #000;
+	margin-top: 15px;
+}
+
+ol,
+ul {
+    margin: 0
+}
+
+ul {
+    list-style: none
+}
+
+ol {
+    list-style: decimal
+}
+
+ol,
+ul.circle,
+ul.disc,
+ul.square {
+    margin-left: 30px
+}
+
+.display-none {
+	display: none;
+}
+
+.margin-bottom-10 {
+	margin-bottom: 10px;
+}
+
+.highlight-box {
+	padding-top: 5%;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	background: #eee;
+	border-radius: 0;
+}
+
+.filter-tab>.active {
+    display: block;
+    padding: 15px;
+    background: #eee;
+}
+
+span.icon {
+	font-size: 16px;
+	padding-left: 15px;
+	font-weight: 400;
+}
+
+span.glyphicon {
+	font-size: 11px;
+	font-weight: 400;
+	float: left;
+	padding-top: 3px;
+    margin-right: 3px;
+}
+.firstp{
+    padding-bottom: 5px;
+}
+.btn-group.open .dropdown-toggle {
+	box-shadow: none;
+	border: 1px solid #000;
+}
+
+.add-filter-menu {
+	float: right;
+	margin-top: -2px;
+	margin-left: 2px;
+}
+
+.add-filter-btn {
+    border: 1px solid #ccc;
+	border-radius: 0;
+    margin-bottom: 0px;
+	margin-right: 2px;
+	margin-top: 2px;
+    background: #FFF;
+	display: inline-block;
+	height: 35px;
+	width: 130px;
+	overflow: hidden;
+	text-align: left;
+}
+
+.add-filter-btn.active, .add-filter-btn:active {
+	webkit-box-shadow: none;
+    box-shadow: none;
+	border: 1px solid #000;
+}
+.add-filter-name {
+    
+}
+.add-filter-list {
+	top: 35px;
+}
+
+li.add-filter-item, li.js-filter-item {
+    padding: 0px 10px;
+}
+
+input.add-filter-checkbox, input.js-filter-checkbox {
+	margin: 0;
+	vertical-align: middle;
+}
+
+.filter-item {
+	display: none;
+	vertical-align: top;
+}
+
+.filter-item.active-filter {
+	display: inline-block;
+}
+
+.chosen {
+	position: relative;
+	background: #eee;
+	width: 98%;
+	height: 25px;
+	background: none repeat scroll 0 0 #EEE;
+    border: 1px solid #BBB;
+	top: 4px;
+    clear: both;
+    display: block;
+    font-size: 11px;
+    margin: 4px 0 6px;
+    padding: 4px 0 4px 9px;
+    white-space: nowrap;
+    overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.remove-chosenFilter {
+	float: right;
+	color: #bbb;
+	padding-right: 5px;
+	cursor: pointer;
+	min-height: 14px;
+    font-weight: 800;
+    font-size: 16px;
+    margin-top: -3px;
+}
+#colorpad, #patternpad{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+select.prod-sort {
+	-moz-appearance: none;
+    -moz-transition: all 150ms ease 0;
+    -ms-transition: all 150ms ease 0;
+    -o-transition: all 150ms ease 0;
+    -webkit-appearance: none;
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 15px;
+    -webkit-transition: all 150ms ease 0;
+    background: #fff url(../img/arrows-sprite.png) no-repeat right -232px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 150ms ease 0;
+	background-position: right -232px;
+    display: inline;
+    font-size: 12px;
+    padding: 6px 15px;
+    width: 162px;
+	height: 35px;
+	float: right;
+}
+.colorsquare {
+    width: 20px;
+    height: 20px;
+    padding: 2px 2px 2px 2px;
+}
+.accordion:hover{
+    cursor: pointer;
+    color:#65a575;
+}
+.editcolor {
+	border:1px solid #dcdcdc;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+	-webkit-border-top-right-radius:5px;
+	-moz-border-radius-topright:5px;
+	border-top-right-radius:5px;
+	-webkit-border-top-left-radius:5px;
+	-moz-border-radius-topleft:5px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: white;
+}
+
+.pane {
+	border:1px solid #dcdcdc;
+	width:100%;
+	/*padding:15px;*/
+	z-index:1;
+	background-color:rgba(255,255,255.0.95);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.rangesty {
+	padding-top: 20px;
+}
+
+.span_bold{
+	float: left;
+	padding: 6px 12px;
+	font-weight: bold;
+	text-transform: capitalize;
+    margin:5px 5px;
+}
+
+.text_radis{
+	border:1px solid #ccc;
+	float: right;
+    font-size: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    width:100%;
+    height: 24px;
+
+}
+.layer_up,.layer_down{
+    margin:5px 5px;
+    text-align: left;
+
+}
+.position_center{
+    margin:0px 5px;
+}
+.lockimg {
+	margin-top: -10px;
+	background: url(../image/image_grp.png) top center no-repeat;
+	background-position: 0 -3600px;
+	cursor: pointer;
+    width: auto;
+    height: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.bring_forwoard {
+	background: url(../image/image_grp.png) top center no-repeat;
+	background-position: 0 -2553px;
+	display: inline-block;
+    padding-left: 22px;
+    font-size: 12px;
+}
+
+.selectcolor {
+	margin-left: 3px;
+	/*padding :13px 13px;*/
+    width: 28px;
+    height: 28px;
+	margin-top: 3px;
+}
+
+.send_backward {
+	background: url(../image/image_grp.png) top center no-repeat;
+	background-position: 0 -2653px;
+	display: inline-block;
+    padding-left: 22px;
+    font-size: 12px;
+}
+
+span.position_center{
+	background: url(../image/image_grp.png) top center no-repeat;
+	background-position: 0 -4003px;
+	display: inline-block;
+    padding-left: 22px;
+    font-size: 12px;
+}
+.nav-pills>li>a{
+    border-right: 1px solid #ddd;
+    border-radius: 0px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-right: 0px solid #ddd;
+    border-top: 1px solid #ddd;
+    color: #555;
+    background-color: #fff;
+
+}
+.nav-stacked>li+li {
+    margin-top: 0px; 
+}
+.btn::hover {
+    background-color: #009ddc;
+    color: #fff;
+}
+.secondp{
+	background: white;
+    padding-top: 10px;
+}
+input[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+    
+    /*fix for FF unable to apply focus style bug */
+    border: 1px solid white;
+    
+    /*required for proper track sizing in FF*/
+    width: 100%;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #666;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background: white;
+    margin-top: -8px;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+input[type=range]::-moz-range-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-moz-range-thumb {
+    border: 1px solid #666;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background: white;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+input[type=range]::-ms-track {
+    width: 300px;
+    height: 5px;
+    
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+    
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+    border: 1px solid #666;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background: white;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #888;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #ccc;
+}
+
+.closebtn {
+    background-color: red;
+    float: right;
+    color: white;
+    margin-top: 10px;
+}
+
+.closebtn:hover, .closebtn:active, .closebtn:focus {
+    background-color: red;
+    color: white;
+}
+
+.tab_custom{
+    
+    background: #eee;
+    
+}
+
+
+
+
+.text_radis {
+    font-size: 10px;
+    padding: 0px 4px;
+}
+.womenimg{
+    z-index: 999;
+    margin-top: -100px;
+    margin-left: -60px;
+    width: 100px;
+    height: 140px;
+}
+.shirtimg{
+    z-index: 999;
+    margin-top: -100px;
+    margin-right: -85px;
+    width: 100px;
+    height: 140px;
+    float:right;
+}
+.editcolorbox{
+    z-index: 998;
+    margin-left: 0px;
+    padding-top: 100px;
+
+}
+.toolbox{
+    text-align: center;
+    z-index: 996; 
+    margin:0px 0px;
+    margin-top:-20px;
+}
+.toolbox button:hover{
+    background: white;
+
+}
+
+.addtextimg{
+    /*background: url(../image/addtext.png) top left no-repeat;*/
+}
+
+/*.accordion {
+    background-color: #ccc;
+    color: #444;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+ Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) 
+.accordion.active, button.accordion:hover {
+    background-color: #ccc;
+    width: 100%;
+}*/
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.36s ease-in-out;
+    opacity: 0;
+    border:1px solid #ddd;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+    border:1px solid #ddd; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+
+.colordiv{
+    padding-bottom: 10px;
+}
+
+.placement-modal .modal-body {
+    margin: 0 auto;
+}
+
+.placement-modal .modal-body div{
+    margin: 2px;
+    border: 1px solid transparent;
+}
+
+.placement-modal .modal-body div:hover, .placement-modal .modal-body div:focus {
+    border: 1px solid #2e6da4;
+}
+
+.placement-modal .modal-body > div.active {
+    border: 1px solid #2e6da4 !important;   
+}
+#listClipArt,#listFont{
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width:105px;
+}
+#listClipArt li:hover{
+    background: #eee;
+}
+#tbx:hover{
+    -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,.125); 
+    box-shadow: inset 0 0px 0px rgba(0,0,0,.125); 
+}
+#tbx{
+    border: solid 1px #ccc;
+    border-radius: 0px;
+    height: 35px;
+}
