@@ -62,7 +62,7 @@ fabric.Object.prototype.customiseCornerIcons( {
 
 // fabric.Object.prototype.cornerStyle 		= 'circle';
 // fabric.Object.prototype.strokeDashArray 	= [3, 3];
-var canvas = new fabric.Canvas('myCanvas');
+var canvas = new fabric.Canvas('myCanvas',{ preserveObjectStacking: true });
 
 // canvas.add(new fabric.Circle({ radius: 50, fill: '#f55', top: 300, left: 600, }));
 // canvas.add(new fabric.Circle({ radius: 40, fill: '#cde', top: 100, left: 100, }));
